@@ -1,5 +1,7 @@
 STEPS for building the pipeline:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+
+first i have to install anaconda and other necessary libraries where i had several problems installing them.
 All the images are the same size. If not we would have need to define region of interest in relative rather than absolute coordinates. In a real car we would have control over the images but for testing that is not necessarily A case.
 Now let's build the pipeline - for now the parameters we apply to a video stream are fixed. So I am going to encode them as default values in the pipeline function. This first pipeline just generates the Hough lines. It took about 5 minutes to find good settings here.
 Would be good to display images in a more interactive mode - so reading off coordinates is easier. Maybe try and explore what is possible with Bokeh.
